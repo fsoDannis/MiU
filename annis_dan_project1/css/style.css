@@ -1,4 +1,7 @@
-
+A:link {text-decoration: none;}
+A:visited {text-decoration: none; color:#000}
+A:active {text-decoration: none}
+A:hover {text-decoration: underline; color: yellow;}
 
 body{ 
 	background:#f8f8f8;
@@ -14,7 +17,7 @@ h3{
 	font-size:140%;
 	font-weight:normal;
 	margin:0;
-	background:#0288d1;	
+	background:#000;	
 	color:#fff;
 	font-size:20px;
 	text-align: center;
@@ -25,13 +28,68 @@ h3{
 		padding:10px 20px;		
 		}	
 							
+h4{
+	background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.19, rgb(159,211,235)),
+    color-stop(0.58, rgb(7,136,200))
+	);
+	background-image: -moz-linear-gradient(
+    center bottom,
+    rgb(159,211,235) 19%,
+    rgb(7,136,200) 58%
+	);
 	
+	margin:2px;padding:5px 20px;
+	font-size:20px;
+	border: 2px solid #000;border-radius:5px;
+}
 #container{	
 	background:#fff;
 	width:480px;
 	border: 1px solid #000;
 	text-align:left;
 	}		
+h2{text-align: center;}
+
+#feature{
+	padding: 0px 0px 0px 10px;
+	border-bottom: 3px solid #000;
+	border-top:3px solid #000;
+	background: #d2d2d2;
+}
+#search{margin:4px 30px 4px 1px;padding:1px 10px;}
+input#search{
+		border:1px solid #111;
+		border-radius: 5px;
+		background:#fff;
+		padding:5px 5px;
+		color:#009af2;
+		width:320px;
+		}
+		
+		
+#accordian{
+	margin: 4px 30px 10px 30px;
+	text-align:center;
+}
+
+#fieldOne{
+}
+	
+#fieldTwo{
+}
+	
+#fieldThree{
+}
+	
+#fieldFour{
+}
+	
+#fieldFive{
+}
 
 
 	#footer{

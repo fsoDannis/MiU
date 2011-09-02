@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>New Form</title>	
+	<title>Search/Browse</title>	
 	<meta charset="UTF-8" />    
 	<link rel="stylesheet" href="css/style.css" />
 </head>
@@ -9,67 +9,17 @@
 
 <div id="container">
 		<header id="header">
-			<h3><span>Project List</span></h3>
+			<h3><span>Network Operations - Supervisor Projects</span></h3>
 		</header>
-		<form id="form1" action="#" method="post">	
-		
-			
-
-		
-			<fieldset><legend>Project List</legend>
-				<p>	
-					<label for="select"> Select a Supervisor</label>
-					<select tabindex="1" id="selectSup">
-						<option></option>	
-						<option value="Dan Annis"> Dan Annis </option>						
-						<option value="Ken Senter"> Ken Senter </option>
-						<option value="Matt Vornberg"> Matt Vornberg </option>
-						<option value="Kristy Hardin"> Kristy Hardin </option>
-						<option value"Fred Lattimore"> Fred Lattimore </option>
-					</select>	
-				</p>
-
-				<p>
-					<label for="projectName">Project Name</label>
-					<input type="text" tabindex="2" name="projectName" id="projectName" size="30" />
-				</p>
-				<p>
-					<label for="message">Additional Notes:</label>
-					<textarea  tabindex="3" name="message" id="message" cols="30" rows="10"></textarea>
-				</p>	
-				<p>
-					<label for="range">Priority Level</label>
-					
-					<input type="range" min="1" max="5" value="1" step="1" onchange="showValue(this.value)" id="priority" tabindex="4" />
-						<span id="slider">5</span>
-						<script type="text/javascript">
-							function showValue(newValue){
-							document.getElementById("slider").innerHTML=newValue;
-							}
-						</script>
-				</p>
-				<p>
-					<label for="date">Completion Date</label>
-					<input id="date" tabindex="4" type="date" />
-				</p>
-				<p>
-					<label for="check">Dave request?</label>
-					<input type="checkbox" tabindex="5"  name="check" id="check" />
-				</p>																	
-				<p>
-					<input tabindex="6" id="submit" type="submit" class="submit" value="Submit" />
-					<input tabindex="7" id="editItem" type="submit" class="editItem" value="Edit Items"/>
-				</p>		
-							
-			</fieldset>					
-						
-		</form>	
-		<div id="resultsDiv"></div>
-		<div id="clearDiv">
-			<p>
-			<input id="clear" type="button" class="a" name="clear" value="Clear Local Storage" onclick="clearLocal(); location.reload();" />
-			</p>
-		</div>
+		<div>Feature Item</div>
+		<div>Search Function</div>
+		<div>Accordian Wrap
+			<div>Field 1</div>
+			<div>Field 2</div>
+			<div>Field 3</div>
+			<div>Field 4</div>
+			<div>Field 5</div>
+		</div>	
 		<div id="footer">
 			<footer id="footer">Dan Annis<br />08/2011</footer>
 		</div>

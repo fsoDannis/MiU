@@ -3,152 +3,41 @@
 body{ 
 	background:#f8f8f8;
 	font:13px Trebuchet MS, Arial, Helvetica, Sans-Serif;
-	color:#333;
+	color:#000;
 	line-height:160%;
 	margin:0;
 	padding:0;
 	text-align:center;
 	}
 
-
-
 h3{          
 	font-size:140%;
 	font-weight:normal;
-	margin:1em 0;
+	margin:0;
+	background:#0288d1;	
+	color:#fff;
+	font-size:20px;
+	text-align: center;
 	}
+		
+	#header h3 span{
+		display:block;
+		padding:10px 20px;		
+		}	
 							
 	
 #container{	
-	
 	background:#fff;
 	width:480px;
-
+	border: 1px solid #000;
 	text-align:left;
 	}		
 
 
-
-	#form1,#clearDiv,#resultsDiv{
-		color:#fff;
-		width:480px; 
-		}
-	#header h3{
-		margin:0;
-		background:#24779A;	
-		color:#fff;
-		font-size:20px;
-		border:1px solid #57a700;
-		border-bottom:none;
-		}		
-	#header h3 span{
-		display:block;
-		padding:10px 20px;		
-		}				
-	#form1 fieldset, #clearDiv,#resultsDiv{
-		width:480px;
-		margin:0;
-		padding:0;
-		border:none;	
-		border-top:3px solid #000;
-		background:#000;		
-		padding-bottom:1em;
-		}		
-	#form1 legend{display:none;}	
-	#form1 p{margin:.5em 20px;} 	
-	#form1 label{display:block;}
-	#form1 input, #form1 textarea{		
-		border:1px solid #111;
-		background:#282828;
-		padding:5px 3px;
-		color:#fff;
-		}		
-	#form1 textarea{
-		width:100%;
-		height:125px;
-		resize: none;
-		}
-	#projectName,#web{
-		width:100%;
-		}
-	#form1 select{
-		border:1px solid #111;
-		background:#282828;
-		padding:5px 3px;
-		color:#fff;
-		}
-	input#check{
-		border:1px solid #111;
-		background:#282828;
-		padding:5px 3px;
-		color:#fff;
-		}		
-	input#submit,input#editItem{
-		border: 1px solid #24779A;
-		border-radius:5px;
-		}
-	input#editItem{
-		display: none;
-	}
-	#form1 priority{
-		width:200px;
-		}
-
-	input[id='priority'] {  
-		-webkit-appearance: none;  
-		width: 100px;  
-		height: 10px;  
-		padding: 3px;  
-		border: 1px solid #525252;  
-		background-color: #000000;  
-	}  
-
-	input[id='priority']::-webkit-slider-thumb {  
-		-webkit-appearance: none;  
-		background-color: #35344f;  
-		width: 10px;  
-		height: 10px;  
-		-webkit-border-radius: 10px;
-		border-radius: 10px;  
-		border: 1px solid #7309AA;
-	} 		
-
-	#content{
-		background:#000;
-		padding:5px 0px 20px 20px;
-		color:#FFF;
-	}
-	#slider{
-		float:right;
-		padding: 3px 305px 0px 0px;	
-		color:#fff;
-		font-size:20px;
-		}
-		
-		
-	#resultsDiv p,#clearDiv p{margin:.5em 20px;}
-	
-
-		
-	}
-	#clearDiv{
-		text-align:center;
-		display:none;
-	}
-		
-	.button {
-   		border: 1px solid #006;
-		border-radius:5px;
-  		background: #24779A;
-		color:#fff;
-	}
-	
 	#footer{
 		padding: 0px 10px 0px 0px;
-		background:#24779A;	
+		background:#0288d1;	
 		color:#fff;
 		text-align: right;
 		}	
-		
-	#dan,#ken,#matt,#kristy,#fred{display:none;height:50px; background:#FFFFFF; text-align:  center;}
-	#dannis{height:50px;}
+	

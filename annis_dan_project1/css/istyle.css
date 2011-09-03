@@ -1,4 +1,4 @@
-A:link {}
+A:link {color: #000;}
 A:visited {text-decoration: none; color:#FFF}
 A:active {text-decoration: none}
 A:hover {text-decoration: underline; color: #000;}

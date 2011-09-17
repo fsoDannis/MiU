@@ -1,79 +1,100 @@
 <!DOCTYPE html> 
 <!-- Dannis -->
 <html> 
-	<head> 
-	<title>Dinky Details - Send us your Info</title> 
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-
-	<link rel="stylesheet" href="jquery.mobile-1.0b2.min.css" />
-	<link rel="stylesheet" href="style.css" />
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js"></script>
+    <head> 
+    <title>Dinky Details - Send us your Info</title> 
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="jquery.mobile-1.0b2.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    
 </head> 
 
 <body>
 
 
-	
+    
 <!-- Start of first page -->
 
-<div data-role="page" id="request">
+<div data-role="page" data-theme="b" id="form" >
+<form id="request" action="" method="post">
+    <div data-theme="a" data-role="header" data-position="inline"  role="banner">
+        <a href="new.html" data-direction="reverse" data-icon="arrow-l" >
+            <span >
+                <span>Back</span>
+                <span></span>
+            </span>
+        </a>
+        <h1>Information</h1>
+    </div><!-- /header -->
 
-	<div data-theme="a" data-role="header" data-position="inline" class="ui-header ui-bar-a" role="banner">
-		<a href="new.html" data-direction="reverse" data-icon="arrow-l" class="ui-btn-left ui-btn ui-btn-icon-left ui-btn-corner-all ui-shadow ui-btn-down-a ui-btn-up-a">
-			<span class="ui-btn-inner ui-btn-corner-all">
-				<span class="ui-btn-text">Back</span>
-				<span class="ui-icon ui-icon-arrow-l ui-icon-shadow"></span>
-			</span>
-		</a>
-		<h1 class="ui-title" role="heading" aria-level="1">Request Information</h1>
-	</div><!-- /header -->
-
-	
-	<div data-role="content" class="ui-content ui-body-c" role="main">
-		<div class="content-primary">
-			<h2>All Fields Required</h2>
-			<div class="ui-body ui-body-e">
-				<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
-   	 				<label for="name">Full Name:</label>
-  	 				<input data-theme="d" placeholder="Dan Annis" type="text" name="name" id="name" value="" class="ui-input-text ui-body-null ui-corner-all ui-shadow-inset ui-body-c"   />
-				</div>					
-				<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
-		   		 	<label for="name"class="ui-label-text">Telephone Number:</label>
-		  		 	<input data-theme="d" placeholder="(731) 432-6647" type="tel" name="tel" id="tel" value="" class="ui-input-text ui-body-null ui-corner-all ui-shadow-inset ui-body-c"  />
-				</div>
-				<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
-		   		 	<label for="select-choice-a" class="select-ui-select">Product Interested in:</label>
-		  		 	<div class="ui-select">
-		  		 		<select data-theme="d" name="select-choice-a" id="select-choice-a">
-		  		 			<option value="choose">Choose:</option>
-		  		 			<option value="announce">Announcements</option>
-		  		 			<option value="broch">Brochures</option>
-		  		 			<option value="bizcard">Business Cards</option>
-		  		 			<option value="greetcard">Greeting Cards</option>
-		  		 			<option value="post">Postcards</option>
-		  		 			<option value="any">Product Not Listed</option>
-		  		 		</select>
-		  		 	</div>
-				</div>
-				<div data-role="fieldcontain" data-theme="d" class="ui-field-contain ui-body ui-br">
-					<label for="slider-c" data-theme="d" id="slider-c-label"class="ui-slider ui-input-text">Quantity Interested in:</label>
- 					<input type="number" data-theme="d" data-type="range" name="slider" id="slider-c" value="0" min="0" max="50" class="ui-slider-input ui-input-text ui-body-null ui-corner-all ui-shadow-inset ui-body-c" />
-				</div>
-				<div data-role="fieldcontain" >
-					<label for="textarea">Additional Info:</label>
-					<textarea data-theme="d" placeholder="Place details here..."cols="40" rows="8" name="textarea" id="textarea"></textarea>
-				</div>
-				<button type="submit" data-theme="a" name="submit" value="submit-value" class="ui-btn-hidden" aria-disabled="false"> Submit</button>		
-			</div>		
-		</div>
-		<p></p>
-	</div>
+    
+    <div data-role="content"  role="main">
+        <div class="content-primary">
+            <div>
+                <div data-role="fieldcontain" >
+                        <label for="name">Full Name:</label>
+                       <input data-theme="d"  type="text" id="name"  class="required" />
+                </div>                    
+                <div data-role="fieldcontain" >
+                        <label for="tel">Telephone Number:</label>
+                       <input data-theme="d"  placeholder="(731) 432-6647" type="tel" id="tel" class="required number" /> 
+                </div>
+                <div data-role="fieldcontain" >
+                        <label for="select">Product Interested in:</label>
+                       <div>
+                           <select data-theme="d" data-native-menu="false" id="select" class="required">
+                               <option data-placeholder="true">Choose:</option>
+                               <option value="announce">Announcements</option>
+                               <option value="broch">Brochures</option>
+                               <option value="bizcard">Business Cards</option>
+                               <option value="greetcard">Greeting Cards</option>
+                               <option value="post">Postcards</option>
+                               <option value="any">Product Not Listed</option>
+                           </select>
+                       </div>
+                </div>
+                <div data-role="fieldcontain" data-theme="d" >
+                    <label for="slider-c" data-theme="f" id='slider-label'>Quantity Interested in:</label>
+                     <input type="number" data-theme="d" data-type="range" name="slider" id="slider-c" value="10" min="0" max="50" class="ui-slider-input ui-input-text ui-body-null ui-corner-all ui-shadow-inset ui-body-c" />
+                </div>
+                <div data-role="fieldcontain" >
+                    <fieldset data-role="controlgroup">
+                        <legend> Finishing:</legend>
+                        <input  data-theme="c" type="checkbox" checked="true" id="none" />
+                        <label for="none">No Additional Touches</label>
+                        <input  data-theme="c" type="checkbox" id="rounded" />
+                        <label for="rounded">Rounded Corners</label>
+                        <input data-theme="c"type="checkbox" id="gloss" />
+                        <label for="gloss">Gloss Finish</label>
+                        <input data-theme="c"type="checkbox" id="grayscale" />
+                        <label for="grayscale">Grayscale only</label>
+                    </fieldset>
+                    
+                </div>
+                
+                
+                
+                <div data-role="fieldcontain" >
+                    <label for="textarea">Additional Info:</label>
+                    <textarea data-theme="d" placeholder="Place details here..."cols="40" rows="8" name="textarea" id="textarea"></textarea>
+                </div>
+                <div data-role="fieldcontain" >
+                <input type="submit" data-theme="a" name="submit" value="Submit" />         
+                </div>
+            </div>        
+        </div>
+        <p></p>
+    </div>
+</form>
 <!-- /content -->
 
 
 
-</body>
 
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js"></script>
+<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>

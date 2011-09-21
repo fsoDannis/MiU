@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+<!-- Dannis -->
+<html> 
+    <head> 
+    <title>Dinky Details - Send us your Info</title> 
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <link rel="stylesheet" href="jquery.mobile-1.0b2.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    
+
+	</head> 
+
+	<body>
+   
+
+	<div data-role="page" id="form" data-add-back-btn="true" >
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Send us your info</h1>
+		</div>
+	
+		<div data-role="content">
+		
+		<form id="request" method="post">
+    	
+                <div data-role="fieldcontain" >
+                       <label for="name">Full Name:</label>
+                       <input type="text" name="name" id="name"  class="required" />
+                </div>  
+                                  
+                <div data-role="fieldcontain" >
+                        <label for="tel">Telephone Number:</label>
+                       	<input type="tel" id="tel" class="required number" /> 
+                </div>
+                
+                <div data-role="fieldcontain" >
+                        <label for="select">Product Interested in:</label>
+                      	 <div>
+                           <select data-theme="d" data-native-menu="false" id="select" class="required">
+                               <option data-placeholder="true">Choose:</option>
+                               <option value="announce">Announcements</option>
+                               <option value="broch">Brochures</option>
+                               <option value="bizcard">Business Cards</option>
+                               <option value="greetcard">Greeting Cards</option>
+                               <option value="post">Postcards</option>
+                               <option value="any">Product Not Listed</option>
+                           </select>
+                      	 </div>
+                </div>
+                
+                <div data-role="fieldcontain" >
+                    <label for="slider-c" data-theme="f" id='slider-label'>Quantity Interested in:</label>
+                    <input type="number" data-theme="d" data-type="range" name="slider" id="slider-c" value="10" min="0" max="50" class="ui-slider-input ui-input-text ui-body-null ui-corner-all ui-shadow-inset ui-body-c" />
+                </div>
+                
+                <div data-role="fieldcontain" >
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend> Finishing:</legend>
+                        <input  data-theme="c" type="checkbox" id="rounded" />
+                        <label for="rounded">Beveled</label>
+                        <input data-theme="c"type="checkbox" id="gloss" />
+                        <label for="gloss">Gloss</label>
+                        <input data-theme="c"type="checkbox" id="grayscale" />
+                        <label for="grayscale">Blk/Wht</label>
+                    </fieldset>
+                    
+                </div>
+                
+                <div data-role="fieldcontain" >
+                    <label for="textarea">Additional Info:</label>
+                    <textarea data-theme="d" placeholder="Place details here..."cols="40" rows="8" name="textarea" id="textarea" ></textarea>
+                </div>
+                
+                <div data-role="fieldcontain" >
+                <input type="submit" data-theme="b" name="submit" value="Submit" /> 
+                <input type="reset" data-theme="a" name="submit" value="Reset"  /> 	
+                        
+                </div>
+                
+       		 <p></p>
+    
+		</form>
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	</body>
+</html>

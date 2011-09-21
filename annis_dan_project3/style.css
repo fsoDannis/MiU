@@ -1,0 +1,28 @@
+#feature{
+	text-align: center;
+}
+
+#header{
+	font-size: 20px;
+}
+
+#search{text-align: center;
+		padding-left:10px;}
+
+.mainimg{
+	width:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+span.portfolio-text{
+	text-align: center;
+}
+
+
+label.error{
+	display: block;
+	margin:10px 0;
+	color:#cc0000;
+	
+	
+}

@@ -1,0 +1,31 @@
+#feature{
+	text-align: center;
+}
+
+
+#search{text-align: center;
+		padding-left:10px;}
+
+.mainimg{
+	width:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+span.portfolio-text{
+	text-align: center;
+}
+
+
+label.error{
+	display: block;
+	margin:10px 0;
+	color:#cc0000;
+	
+	
+}
+
+#main{
+	background-color:"cc0000";}
+
+#dinky {background-color:firebrick; text-shadow: 1px 1px 1px black}
+

@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	var rForm = $('#request');
+	var rForm = $('#form_info');
 	
 	rForm.validate();
 
